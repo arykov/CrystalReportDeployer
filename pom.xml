@@ -1,0 +1,67 @@
+<!--
+*****************************************************************
+# * cibcmellon scm template
+# * %full_filespec: pom.xml~1:xml:4 %
+# * %date_created: Wed Jun 29 20:36:10 2016 %
+# * %created_by: Rykov %
+# *****************************************************************
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ryaltech.sap.deployment</groupId>
+	<version>0.1-SNAPSHOT</version>
+	<artifactId>ReportDeployment</artifactId>
+	<properties>
+		<java.version>1.6</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<!-- specify your location of BOE Java SDK libraries. You can use libraries that come with  SAP CrystalReports design studio-->
+		<boe.lib.home>${basedir}/lib/</boe.lib.home>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+			<version>1.30</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sap.boe</groupId>
+			<artifactId>CrystalEnterpriseRepository</artifactId>
+			<version>14.1.4.1327</version>
+			<scope>system</scope>
+			<systemPath>${boe.lib.home}/cereports.jar</systemPath>
+		</dependency>
+
+
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>2.4.3</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>	

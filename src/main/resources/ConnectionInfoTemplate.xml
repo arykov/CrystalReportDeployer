@@ -1,0 +1,63 @@
+<!--
+*****************************************************************
+# * cibcmellon scm template
+# * %full_filespec: ConnectionInfoTemplate.xml~1:xml:2 %
+# * %date_created: Wed Jun 29 20:36:12 2016 %
+# * %created_by: Rykov %
+# *****************************************************************
+*/
+-->
+<com.crystaldecisions.sdk.occa.report.data.ConnectionInfo>
+  <m__UserName>unknown</m__UserName>
+  <m__Attributes serialization="custom">
+    <unserializable-parents/>
+    <map>
+      <default>
+        <loadFactor>0.75</loadFactor>
+        <threshold>12</threshold>
+      </default>
+      <int>16</int>
+      <int>7</int>
+      <string>QE_DatabaseType</string>
+      <string>JDBC (JNDI)</string>
+      <string>SSO Enabled</string>
+      <boolean>false</boolean>
+      <string>Database DLL</string>
+      <string>crdb_jdbc.dll</string>
+      <string>QE_DatabaseName</string>
+      <string></string>
+      <string>QE_LogonProperties</string>
+      <com.crystaldecisions.sdk.occa.report.lib.PropertyBag serialization="custom">
+        <unserializable-parents/>
+        <map>
+          <default>
+            <loadFactor>0.75</loadFactor>
+            <threshold>12</threshold>
+          </default>
+          <int>16</int>
+          <int>6</int>
+          <string>JDBC Connection String</string>
+          <string>!oracle.jdbc.OracleDriver!jdbc:ryaltech:oraid:@${DB_PROPERTIES_LOCATION}!user={userid}!password={password}</string>
+          <string>Database</string>
+          <string></string>
+          <string>Database Class Name</string>
+          <string>oracle.jdbc.OracleDriver</string>
+          <string>Use JDBC</string>
+          <boolean>true</boolean>
+          <string>Connection URL</string>
+          <string>jdbc:ryaltech:oraid:@${DB_PROPERTIES_LOCATION}</string>
+          <string>Server</string>
+          <string></string>
+        </map>
+      </com.crystaldecisions.sdk.occa.report.lib.PropertyBag>
+      <string>QE_SQLDB</string>
+      <boolean>true</boolean>
+      <string>QE_ServerDescription</string>
+      <string>jdbc:ryaltech:oraid:@${DB_PROPERTIES_LOCATION}</string>
+    </map>
+  </m__Attributes>
+  <m__ConnectionKind>
+    <__value>5</__value>
+  </m__ConnectionKind>
+  <m__dataSourceLanguageLevel>UNILINGUAL</m__dataSourceLanguageLevel>
+</com.crystaldecisions.sdk.occa.report.data.ConnectionInfo>
