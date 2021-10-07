@@ -10,7 +10,7 @@ Crystal Report  Deployer
 
 For background on this check the blog post [here](http://blog.ryaltech.com/2016/05/06/crystal-identitypropagation).
 
-This utility is used to deploy reports to SAP Business Objects Enterprise and change DB connection to use [Oracle Identity JDBC Driver](https://github.com/arykov/identityoraclejdbc). 
+This utility is used to deploy reports to SAP Business Objects Enterprise and change DB connection to use [Oracle Identity JDBC Driver](https://github.com/arykov/OracleIdentityDriver). 
 
 Before building don't forget to update boe.lib.home in pom.xml
 
